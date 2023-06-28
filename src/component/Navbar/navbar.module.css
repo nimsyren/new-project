@@ -1,0 +1,26 @@
+.container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  margin-bottom: 4em;
+  /*background-color: #1273eb;
+     color: #fff;*/
+  max-width: 1200px;
+  margin: 0 auto;
+  min-height: 90px;
+  width: 100%;
+}
+.menuContainer {
+  display: flex;
+}
+.menuLink {
+  padding: 5px;
+}
+.mr {
+  margin-right: 15px;
+}

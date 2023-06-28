@@ -1,0 +1,25 @@
+.button {
+  position: fixed;
+  width: 40px;
+  height: 40px;
+  bottom: 40px;
+  right: 40px;
+  background-color: var(--background-color);
+  text-align: center;
+  border: 0 none transparent;
+  border-radius: 50%;
+  box-shadow: var(--shadow);
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  transform: translate3d(0, 40px, 0);
+  opacity: 0;
+}
+
+.button.visible:hover {
+  transform: translate3d(0, -5px, 0);
+}
+
+.button.visible {
+  opacity: 1;
+  transform: translate3d(0, 0px, 0);
+}

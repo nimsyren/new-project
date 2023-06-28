@@ -1,0 +1,151 @@
+/* ==========================================================================
+   Base styles
+   ========================================================================== */
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.container {
+  text-align: center;
+  margin: 0 auto;
+  justify-content: center;
+}
+
+.container.reverse {
+  flex-direction: row-reverse;
+}
+
+.containerColumn {
+  flex-direction: column;
+}
+
+.column {
+  flex-grow: 0;
+  max-width: 50%;
+  flex-basis: 50%;
+}
+
+.section {
+  padding-top: 4em;
+  padding-bottom: 4em;
+  width: 100%;
+}
+
+.section.bg {
+  background-color: var(--background-color);
+}
+
+.left {
+  text-align: left;
+  align-items: flex-start;
+}
+
+.right {
+  text-align: right;
+  align-items: flex-start;
+}
+
+.title {
+  font-size: 2.5em;
+  line-height: 1.4em;
+  font-weight: 400;
+  margin: 1em auto;
+  color: var(--text-primary-color);
+}
+
+.subtitle {
+  font-size: 1.25em;
+  margin: 1em auto;
+  color: var(--text-secondary-color);
+}
+
+.topbar {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  margin-bottom: 4em;
+  /*background-color: #1273eb;
+     color: #fff;*/
+}
+
+.slider {
+  padding-left: 60px;
+  padding-right: 60px;
+  text-align: center;
+  padding-top: 30px;
+  padding-bottom: 4em;
+}
+
+.infoBox {
+  display: flex;
+}
+
+.marginRight {
+  margin-right: 30px;
+}
+
+.box {
+  padding: 15px;
+}
+
+.main image {
+  max-width: 100%;
+}
+
+@media (min-width: 1400px) {
+  .container {
+    max-width: 1200px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .container {
+    max-width: 900px;
+  }
+}
+
+@media (max-width: 900px) {
+  .container {
+    max-width: 750px;
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    max-width: 100%;
+  }
+
+  .container {
+    flex-direction: column;
+  }
+
+  .container.reverse {
+    flex-direction: column;
+  }
+
+  .column {
+    flex-grow: 0;
+    max-width: 100%;
+    flex-basis: 100%;
+  }
+  .topbar {
+    padding: 10px;
+  }
+  .left,
+  .right {
+    text-align: center;
+  }
+  .title {
+    font-size: 1.75em;
+  }
+  .subtitle {
+    font-size: 1em;
+  }
+}
