@@ -17,9 +17,28 @@ export default function Navbar() {
         <Link href="/" className={styles.menuLink + " " + styles.mr}>
           Нүүр
         </Link>
-        <Link href="/delivery" className={styles.menuLink + " " + styles.mr}>
-          Үйлчилгээ
-        </Link>
+        <div className={styles.menuLink + " " + styles.mr + " " + styles.drop}>
+          <a>Үйлчилгээ</a>
+          <div className={styles.dropdown}>
+            <div className={styles.dropdownCont}>
+              <Link
+                href="/delivery"
+                className={styles.dropdownMenu + " " + styles.mb}
+              >
+                Хүргэлтийн апп
+              </Link>
+              <Link
+                href="/mobileapp"
+                className={styles.dropdownMenu + " " + styles.mb}
+              >
+                Мобайл апп
+              </Link>
+              <Link href="/website" className={styles.dropdownMenu}>
+                Веб сайт
+              </Link>
+            </div>
+          </div>
+        </div>
         <Link href="/aboutus" className={styles.menuLink + " " + styles.mr}>
           Бидний тухай
         </Link>

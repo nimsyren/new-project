@@ -4,7 +4,95 @@
 
 .container {
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: column;
+  max-width: 800px;
   margin: 0 auto;
-  max-width: var(--max-width);
+  margin-top: 60px;
+  margin-bottom: 60px;
+}
+.container h1,
+.container p {
+  margin-bottom: 20px;
+}
+.container form {
+  width: 100%;
+}
+.mb {
+  margin-bottom: 20px;
+}
+.form {
+  min-height: 40px;
+  padding: 6px 12px;
+  border: 1px solid var(--border-color);
+  background-color: var(--background-color);
+  color: var(--text-primary-color);
+  width: 100%;
+  font-family: var(--font-family);
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+.form:focus {
+  outline: 0;
+  border-color: var(--brand-color);
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075),
+    0 0 8px rgba(1, 173, 164, 0.3);
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075),
+    0 0 8px rgba(1, 173, 164, 0.3);
+}
+.textarea {
+  height: 8em;
+}
+.formBtn {
+  min-height: 40px;
+  padding: 6px 24px;
+  background-color: transparent;
+  border: 1px solid var(--border-color);
+  color: var(--text-primary-color);
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+.formBtn:hover,
+.formBtn:focus {
+  border-color: var(--brand-color);
+  color: var(--brand-color);
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075),
+    0 0 8px rgba(1, 173, 164, 0.3);
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075),
+    0 0 8px rgba(1, 173, 164, 0.3);
+}
+.formBtn:active {
+  -webkit-box-shadow: 0 !important;
+  box-shadow: 0 !important;
+}
+.cont {
+  display: flex;
+}
+.col {
+  flex: 1;
+}
+.pr {
+  padding-right: 16px;
+}
+.title {
+  font-size: 2.5em;
+  line-height: 1.4em;
+  font-weight: 400;
+  margin: 1em auto;
+  color: var(--text-primary-color);
+}
+.subTitle {
+  font-size: 1.2em;
+  line-height: 1.4em;
+  font-weight: 700;
+  margin: 1em 0;
+  color: var(--text-primary-color);
+}
+.rigth {
+  display: flex;
+  justify-content: flex-end;
+}
+.boxShadow {
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075),
+    0 0 8px var(--brand-color);
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px var(--brand-color);
 }

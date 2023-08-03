@@ -5,7 +5,7 @@ import Tabs from "../../component/Tabs";
 
 export default function AboutUs() {
   return (
-    <div className={styles.container}>
+    <div className={"container"}>
       <div className={styles.imageContainer}>
         <Image
           src="/image/working.jpg"

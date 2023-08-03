@@ -5,9 +5,6 @@
 .container {
   display: flex;
   flex-wrap: wrap;
-}
-
-.container {
   text-align: center;
   margin: 0 auto;
   justify-content: center;
@@ -17,7 +14,6 @@
   padding-top: 4em;
   padding-bottom: 4em;
   width: 100%;
-  background-color: var(--background-color);
   padding: 20px 0 0;
   border-top: 1px solid var(--border-color);
 }
@@ -95,7 +91,8 @@
   border-radius: 10px;
   padding: 60px 30px 60px 30px;
   box-shadow: var(--shadow);
-  background-color: #fff;
+  background-color: var(--background-color);
+  max-width: 350px;
 }
 
 .priceHeader {

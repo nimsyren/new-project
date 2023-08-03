@@ -20,7 +20,36 @@
 }
 .menuLink {
   padding: 5px;
+  position: relative;
+  cursor: pointer;
+}
+.menuLink:hover,
+.dropdownMenu:hover {
+  text-decoration: underline;
 }
 .mr {
-  margin-right: 15px;
+  margin-right: 16px;
+}
+.mb {
+  margin-bottom: 16px;
+}
+.dropdownMenu {
+  display: block;
+  padding: 5px;
+}
+.dropdown {
+  position: absolute;
+  min-width: 160px;
+  display: none;
+  z-index: 10;
+}
+.dropdownCont {
+  padding: 16px;
+  margin-top: 8px;
+  background-color: var(--background-color);
+  box-shadow: var(--shadow);
+}
+
+.drop:hover .dropdown {
+  display: block;
 }

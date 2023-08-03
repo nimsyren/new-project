@@ -12,7 +12,7 @@ const Tabs = () => {
   return (
     <div className={styles.paddingTop}>
       {/* tab header buttons */}
-      <div className={styles.tabHeaders}>
+      <div className={styles.container}>
         <button
           className={
             active === 1
@@ -51,44 +51,40 @@ const Tabs = () => {
       {active === 1 && (
         <section className={styles.section}>
           <div className={styles.container}>
-            <div className={styles.column}>
-              <div className={styles.priceBox}>
-                <div className={styles.priceHeader}>
-                  <p className={styles.priceTitle}>Энгийн багц</p>
-                </div>
-                <div className={styles.priceBody}>
-                  <div className={styles.priceDescr}>
-                    <p className={styles.priceMain}>200,000₮</p>
-                    <p className={styles.priceSecondary}>/сар</p>
-                  </div>
-                </div>
-                <div className={styles.priceFooter}>
-                  <ul className={styles.priceList}>
-                    <li>1-9 жолооч</li>
-                    <li>Хүргэлтийн тоо хязгааргүй</li>
-                    <li>Хүргэлтийн тайлан</li>
-                  </ul>
+            <div className={styles.priceBox}>
+              <div className={styles.priceHeader}>
+                <p className={styles.priceTitle}>Энгийн багц</p>
+              </div>
+              <div className={styles.priceBody}>
+                <div className={styles.priceDescr}>
+                  <p className={styles.priceMain}>200,000₮</p>
+                  <p className={styles.priceSecondary}>/сар</p>
                 </div>
               </div>
+              <div className={styles.priceFooter}>
+                <ul className={styles.priceList}>
+                  <li>1-9 жолооч</li>
+                  <li>Хүргэлтийн тоо хязгааргүй</li>
+                  <li>Хүргэлтийн тайлан</li>
+                </ul>
+              </div>
             </div>
-            <div className={styles.column}>
-              <div className={styles.priceBox}>
-                <div className={styles.priceHeader}>
-                  <p className={styles.priceTitle}>Ахисан багц</p>
-                </div>
-                <div className={styles.priceBody}>
-                  <div className={styles.priceDescr}>
-                    <p className={styles.priceMain}>400,000₮</p>
-                    <p className={styles.priceSecondary}>/сар</p>
-                  </div>
-                </div>
+            <div className={styles.priceBox}>
+              <div className={styles.priceHeader}>
+                <p className={styles.priceTitle}>Ахисан багц</p>
+              </div>
+              <div className={styles.priceBody}>
                 <div className={styles.priceDescr}>
-                  <ul className={styles.priceList}>
-                    <li>10-20 жолооч</li>
-                    <li>Хүргэлтийн тоо хязгааргүй</li>
-                    <li>Хүргэлтийн тайлан</li>
-                  </ul>
+                  <p className={styles.priceMain}>400,000₮</p>
+                  <p className={styles.priceSecondary}>/сар</p>
                 </div>
+              </div>
+              <div className={styles.priceDescr}>
+                <ul className={styles.priceList}>
+                  <li>10-20 жолооч</li>
+                  <li>Хүргэлтийн тоо хязгааргүй</li>
+                  <li>Хүргэлтийн тайлан</li>
+                </ul>
               </div>
             </div>
           </div>
@@ -98,44 +94,40 @@ const Tabs = () => {
       {active === 2 && (
         <section className={styles.section}>
           <div className={styles.container}>
-            <div className={styles.column}>
-              <div className={styles.priceBox}>
-                <div className={styles.priceHeader}>
-                  <p className={styles.priceTitle}>Энгийн багц</p>
-                </div>
-                <div className={styles.priceBody}>
-                  <div className={styles.priceDescr}>
-                    <p className={styles.priceMain}>175,000₮</p>
-                    <p className={styles.priceSecondary}>/сар</p>
-                  </div>
-                </div>
-                <div className={styles.priceFooter}>
-                  <ul className={styles.priceList}>
-                    <li>1-9 жолооч</li>
-                    <li>Хүргэлтийн тоо хязгааргүй</li>
-                    <li>Хүргэлтийн тайлан</li>
-                  </ul>
+            <div className={styles.priceBox}>
+              <div className={styles.priceHeader}>
+                <p className={styles.priceTitle}>Энгийн багц</p>
+              </div>
+              <div className={styles.priceBody}>
+                <div className={styles.priceDescr}>
+                  <p className={styles.priceMain}>175,000₮</p>
+                  <p className={styles.priceSecondary}>/сар</p>
                 </div>
               </div>
+              <div className={styles.priceFooter}>
+                <ul className={styles.priceList}>
+                  <li>1-9 жолооч</li>
+                  <li>Хүргэлтийн тоо хязгааргүй</li>
+                  <li>Хүргэлтийн тайлан</li>
+                </ul>
+              </div>
             </div>
-            <div className={styles.column}>
-              <div className={styles.priceBox}>
-                <div className={styles.priceHeader}>
-                  <p className={styles.priceTitle}>Ахисан багц</p>
-                </div>
-                <div className={styles.priceBody}>
-                  <div className={styles.priceDescr}>
-                    <p className={styles.priceMain}>350,000₮</p>
-                    <p className={styles.priceSecondary}>/сар</p>
-                  </div>
-                </div>
+            <div className={styles.priceBox}>
+              <div className={styles.priceHeader}>
+                <p className={styles.priceTitle}>Ахисан багц</p>
+              </div>
+              <div className={styles.priceBody}>
                 <div className={styles.priceDescr}>
-                  <ul className={styles.priceList}>
-                    <li>10-20 жолооч</li>
-                    <li>Хүргэлтийн тоо хязгааргүй</li>
-                    <li>Хүргэлтийн тайлан</li>
-                  </ul>
+                  <p className={styles.priceMain}>350,000₮</p>
+                  <p className={styles.priceSecondary}>/сар</p>
                 </div>
+              </div>
+              <div className={styles.priceDescr}>
+                <ul className={styles.priceList}>
+                  <li>10-20 жолооч</li>
+                  <li>Хүргэлтийн тоо хязгааргүй</li>
+                  <li>Хүргэлтийн тайлан</li>
+                </ul>
               </div>
             </div>
           </div>
@@ -145,42 +137,38 @@ const Tabs = () => {
       {active === 3 && (
         <section className={styles.section}>
           <div className={styles.container}>
-            <div className={styles.column}>
-              <div className={styles.priceBox}>
-                <div className={styles.priceHeader}>
-                  <p className={styles.priceTitle}>Энгийн багц</p>
-                </div>
-                <div className={styles.priceBody}>
-                  <p className={styles.priceMain}>150,000₮</p>
-                  <p className={styles.priceSecondary}>/сар</p>
-                </div>
-                <div className={styles.priceFooter}>
-                  <ul className={styles.priceList}>
-                    <li>1-9 жолооч</li>
-                    <li>Хүргэлтийн тоо хязгааргүй</li>
-                    <li>Хүргэлтийн тайлан</li>
-                  </ul>
-                </div>
+            <div className={styles.priceBox}>
+              <div className={styles.priceHeader}>
+                <p className={styles.priceTitle}>Энгийн багц</p>
+              </div>
+              <div className={styles.priceBody}>
+                <p className={styles.priceMain}>150,000₮</p>
+                <p className={styles.priceSecondary}>/сар</p>
+              </div>
+              <div className={styles.priceFooter}>
+                <ul className={styles.priceList}>
+                  <li>1-9 жолооч</li>
+                  <li>Хүргэлтийн тоо хязгааргүй</li>
+                  <li>Хүргэлтийн тайлан</li>
+                </ul>
               </div>
             </div>
-            <div className={styles.column}>
-              <div className={styles.priceBox}>
-                <div className={styles.priceHeader}>
-                  <p className={styles.priceTitle}>Ахисан багц</p>
-                </div>
-                <div className={styles.priceBody}>
-                  <div className={styles.priceDescr}>
-                    <p className={styles.priceMain}>300,000₮</p>
-                    <p className={styles.priceSecondary}>/сар</p>
-                  </div>
-                </div>
+            <div className={styles.priceBox}>
+              <div className={styles.priceHeader}>
+                <p className={styles.priceTitle}>Ахисан багц</p>
+              </div>
+              <div className={styles.priceBody}>
                 <div className={styles.priceDescr}>
-                  <ul className={styles.priceList}>
-                    <li>10-20 жолооч</li>
-                    <li>Хүргэлтийн тоо хязгааргүй</li>
-                    <li>Хүргэлтийн тайлан</li>
-                  </ul>
+                  <p className={styles.priceMain}>300,000₮</p>
+                  <p className={styles.priceSecondary}>/сар</p>
                 </div>
+              </div>
+              <div className={styles.priceDescr}>
+                <ul className={styles.priceList}>
+                  <li>10-20 жолооч</li>
+                  <li>Хүргэлтийн тоо хязгааргүй</li>
+                  <li>Хүргэлтийн тайлан</li>
+                </ul>
               </div>
             </div>
           </div>

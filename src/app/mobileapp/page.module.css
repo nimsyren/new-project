@@ -13,6 +13,11 @@
   max-width: 50%;
   flex-basis: 50%;
 }
+.colCenter {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 .section {
   padding-top: 4em;
   padding-bottom: 4em;
@@ -52,7 +57,7 @@
   padding-bottom: 15px;
   margin-bottom: 4em;
   /*background-color: #1273eb;
-     color: #fff;*/
+       color: #fff;*/
 }
 .slider {
   padding-left: 60px;
@@ -128,8 +133,8 @@
 @-webkit-keyframes slideInRight {
   0% {
     opacity: 0;
-    -webkit-transform: translateX(2000px);
-    transform: translateX(2000px);
+    -webkit-transform: translateX(1000px);
+    transform: translateX(1000px);
   }
   100% {
     -webkit-transform: translateX(0);
@@ -139,9 +144,9 @@
 @keyframes slideInRight {
   0% {
     opacity: 0;
-    -webkit-transform: translateX(2000px);
-    -ms-transform: translateX(2000px);
-    transform: translateX(2000px);
+    -webkit-transform: translateX(1000px);
+    -ms-transform: translateX(1000px);
+    transform: translateX(1000px);
   }
   100% {
     -webkit-transform: translateX(0);
@@ -149,25 +154,23 @@
     transform: translateX(0);
   }
 }
-
 @-webkit-keyframes slideInLeft {
   0% {
     opacity: 0;
-    -webkit-transform: translateX(-2000px);
-    transform: translateX(-2000px);
+    -webkit-transform: translateX(-1000px);
+    transform: translateX(-1000px);
   }
   100% {
     -webkit-transform: translateX(0);
     transform: translateX(0);
   }
 }
-
 @keyframes slideInLeft {
   0% {
     opacity: 0;
-    -webkit-transform: translateX(-2000px);
-    -ms-transform: translateX(-2000px);
-    transform: translateX(-2000px);
+    -webkit-transform: translateX(-1000px);
+    -ms-transform: translateX(-1000px);
+    transform: translateX(-1000px);
   }
   100% {
     -webkit-transform: translateX(0);
@@ -178,10 +181,9 @@
 @-webkit-keyframes slideInDown {
   0% {
     opacity: 0;
-    -webkit-transform: translateY(-2000px);
-    transform: translateY(-2000px);
+    -webkit-transform: translateY(-1000px);
+    transform: translateY(-1000px);
   }
-
   100% {
     -webkit-transform: translateY(0);
     transform: translateY(0);
@@ -190,11 +192,10 @@
 @keyframes slideInDown {
   0% {
     opacity: 0;
-    -webkit-transform: translateY(-2000px);
-    -ms-transform: translateY(-2000px);
-    transform: translateY(-2000px);
+    -webkit-transform: translateY(-1000px);
+    -ms-transform: translateY(-1000px);
+    transform: translateY(-1000px);
   }
-
   100% {
     -webkit-transform: translateY(0);
     -ms-transform: translateY(0);
